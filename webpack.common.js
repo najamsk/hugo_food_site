@@ -48,6 +48,15 @@ module.exports = {
       prettyPrint: true
     }),
 
+      new CopyWebpackPlugin([
+          {
+              from: "./src/videos/",
+              to: "videos/",
+              flatten: true
+          }
+      ]),
+
+
     new CopyWebpackPlugin([
       {
         from: "./src/fonts/",
